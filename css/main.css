@@ -35,7 +35,13 @@ body {
 	background-color: rgba(33%, 27%, 27%, .17);
 	/*filter: brightness(1%);*/
 	text-align: center;
+	transition: all .3s ease;
 }
+
+.nav-item:hover {
+	background-color: rgba(15%, 8%, 8%, .22); 
+}
+
 
 a.nav-link {
 	color: #F5EAEA!important;
@@ -76,7 +82,7 @@ a.nav-link {
 }
 
 .lower-box {
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 	height: 3.2vw;
 	width: 100%;
 	position: relative;
