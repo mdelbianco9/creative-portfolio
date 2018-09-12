@@ -1,4 +1,9 @@
 
+/*Fonts*/ 
+
+.Montserrat {
+	font-family: 'Montserrat', sans-serif; 
+}
 
 
 body {
@@ -42,14 +47,70 @@ a.nav-link {
 	word-wrap: break-word;
 }
 
+.navbar-toggler-icon {
+	background-color: rgba(45%, 30%, 30%, .17);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-toggler {
+	background-color: rgba(33%, 27%, 27%, .17);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.fa-bars {
+	color: #F5EAEA;
+}
+
+.mystyle {
+	background-color: black;
+}
 
 
 
+/***** Hero Section *****/
 
+.hero-section {
+	text-align: center;
+	padding-top: 8vw;
+	height: 100%;
+}
 
+.lower-box {
+	border: 2px solid black;
+	height: 3.2vw;
+	width: 100%;
+	position: relative;
+	
+}
 
+.box {
+	height: 100%;
+	background-color: rgba(33%, 27%, 27%, .17);
+	width: 40%;
+	display: inline-block;
+	position: relative;
+	top: 30%; 
+	margin: 5px;
+	margin-top: 0px;
+}
 
+#designedByMe {
+	position: absolute;
+	bottom: .1vw;
+	left: 1vw;
+}
 
+.hero-section h1.Montserrat {
+	font-size: 8vw;
+}
 
+.hero-section h3.Montserrat {
+	font-size: 3vw;
+}
+
+.hero-section .img-responsive {
+	height: 12vw;
+	width: 17vw;
+}
 
 
