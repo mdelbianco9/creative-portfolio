@@ -9,3 +9,18 @@ function change() {
 document.getElementById("clickme").addEventListener('click', function() {
 	document.getElementById("newColor").classList.add("mystyle");
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
