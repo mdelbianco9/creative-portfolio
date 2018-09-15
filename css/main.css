@@ -15,28 +15,29 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 100%;
 	width: 100%;
 	min-height: 100%;
-
-	
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-	
-
+  	height: auto;
 }
 
-#overlay {
+/*****   #home-card <main> section   *******/
+
+#home-card {
+	border: 10px solid rgba(33%, 27%, 27%, .17);
+	position: fixed;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(255, 252, 252, .27);
-	position: fixed;
-	
+	/*background-color: rgba(33%, 27%, 27%, .0);*/
+}
+
+#designedByMe {
+	position: absolute;
+	bottom: .1vw;
+	left: 1vw;
 }
 
 
-/***** Navbar *****/
+/*********   Navbar   *********/
 
 .navbar-nav {
 	padding-top: 1.5rem;
@@ -86,57 +87,18 @@ a.nav-link {
 
 
 
-/***** Hero Section *****/
+/********    Hero Section    ********/
 
-.hero-section {
+section.hero-section {
 	text-align: center;
-	padding-top: 8vw;
-	height: 100%;
+	padding-top: 9vw;
 	z-index: 300;
-	/*position: relative;*/
-}
-
-#home-card {
-	height: 100%;
-	min-height: 100%;
-	position: relative;
-}
-
-.lower-box {
-	border: 2px solid black;
-	height: 3.2vw;
-	/*width: 100%;*/
-	position: absolute;
-	bottom: 0px;
-	
-}
-
-.box {
-	height: 100%;
-	background-color: rgba(33%, 27%, 27%, .17);
-	width: 40%;
-	display: inline-block;
-	position: relative;
-	top: 30%; 
-	margin: 5px;
-	margin-top: 0px;
-}
-
-#designedByMe {
-	position: absolute;
-	bottom: .1vw;
-	left: 1vw;
-}
-
-.hero-section h1.Montserrat {
-	font-size: 8vw;
-	color: rgb(93, 95, 98);
 }
 
 .hero-section h3.Montserrat {
-	font-size: 3vw;
 	color: rgba(33%, 27%, 27%, .3);
-
+	margin-bottom: 1vw;
+	font-size: 3vw;
 }
 
 .hero-section .img-responsive {
