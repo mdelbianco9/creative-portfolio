@@ -8,10 +8,24 @@
 	.st2{opacity:0.4;}
 	.st3{fill:#7F8286;}
 </style>
-<g class="st0">
-	<path class="st1" d="M929,263L611,566.2L293,263H929 M934,261H288l323,308L934,261L934,261z"/>
+
+<!-- Red Trangle -->
+<g class="st0 ">
+	<path class="st1 " d="M929,
+		263L611,
+		566.2L293,
+		263H929 M934,
+		261H288l323,
+		308L934,
+		261L934,
+		261z"/>
 </g>
+
+<!-- Grey Triangle -->
 <g class="st2">
 	<polygon class="st3" points="611,529 288,221 934,221 	"/>
 </g>
+
 </svg>
+
+
