@@ -168,8 +168,8 @@ section.hero-section {
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(33%, 27%, 27%, .3);
-	/*display: none;*/
+	background-color: rgba(33%, 27%, 27%, .2);
+	display: none;
 }
 
 #page-2 .col-md-5 {
@@ -181,12 +181,30 @@ section.hero-section {
 	color: #fff;
 	font-family: "Montserrat", sans-serif;
 	background-color: rgba(33%, 27%, 27%, .17);
+	transition: all .5s ease-in !important;
+	cursor: pointer;
+	border-radius: 5px;
 }
 
+#page-2 .col-md-5:hover {
+	background-color: rgba(33%, 27%, 27%, .5);
+} 
 
 
 
+.page-2-intro {
+	display: block!important;
+}
 
+.display-none {
+	display: none;
+}
+
+#page-2 .fa-times-circle {
+	color: #fff;
+	margin-top: 1vw;
+	position: absolute;
+}
 
 
 
