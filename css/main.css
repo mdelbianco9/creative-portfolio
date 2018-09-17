@@ -20,9 +20,9 @@ body {
   	height: auto;
 }
 
-/*****   #home-card <main> section   *******/
+/*****   #home-page <main> section   *******/
 
-#home-card {
+#home-page {
 	border: 10px solid rgba(33%, 27%, 27%, .17);
 	position: fixed;
 	height: 100%;
@@ -158,6 +158,47 @@ section.hero-section {
 	color: black;
 	opacity: .5;
 }
+
+
+
+/*****   Page 2   *****/
+
+#page-2 {
+	border: 10px solid rgba(33%, 27%, 27%, .17);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(33%, 27%, 27%, .3);
+	/*display: none;*/
+}
+
+#page-2 .col-md-5 {
+	/*border: 1px solid black;*/
+	height: 22vw;
+	justify-content: center;
+	margin: 1vw;
+	font-size: 5vw;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	background-color: rgba(33%, 27%, 27%, .17);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
