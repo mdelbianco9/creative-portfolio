@@ -201,7 +201,7 @@ section.hero-section {
 
 
 
-.page-2-intro {
+.display-block {
 	display: block!important;
 }
 
@@ -209,15 +209,23 @@ section.hero-section {
 	display: none;
 }
 
-#page-2 .fa-times-circle {
+.opacity-0 {
+	opacity: 0;
+}
+
+.fa-times-circle {
 	color: #fff;
+	position: relative;
+	left: 1vw;
 	margin-top: 1vw;
 	position: absolute;
 	transition: all .3s ease-in;
+	z-index: 1000;
 }
 
-#page-2 .fa-times-circle:hover {
+.fa-times-circle:hover {
 	color: rgba(33%, 27%, 27%, .8);
+	cursor: pointer;
 }
 
 
@@ -228,7 +236,7 @@ section.hero-section {
 	height: 100%;
 	width: 100%;
 	background-color: rgba(56, 49, 49, .73);
-	/*display: none;*/
+	display: none;
 }
 
 /*#myCarousel {

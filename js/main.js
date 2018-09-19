@@ -1,7 +1,14 @@
 
 
 var change = document.getElementById("newColor");
+// Work Experience options page 
+var page_2 = document.getElementById('page-2');
+// Home page
+var home_page = document.getElementById('home-page');
+var web_dev_page = document.getElementById('web-dev-page');
 
+
+// Change color of elements on ? button
 function change() {
 	document.getElementById("newColor").style.backgroundColor = "Black";
 };
@@ -11,16 +18,30 @@ document.getElementById("clickme").addEventListener('click', function() {
 });
 
 
+
+
 /*   Slide #page-2 to view */
 document.getElementById('Layer_1').addEventListener("click", function() {
-	var page_2 = document.getElementById('page-2');
-	let classesToAdd = ["animated", "slideInUp", "page-2-intro"];
+	let classesToAdd = ["animated", "slideInUp", "display-block"];
 	page_2.classList.add(...classesToAdd);
-
-	var home_page = document.getElementById('home-page');
+	// Removes the home-page from screen
 	home_page.classList.add("display-none");
 });
 
 
+
+// Show web-dev-page on click of Web Development option in work experences
+document.getElementById('web-dev').addEventListener('click', function() {
+	let classesToAdd = ["display-block", "animated", "fadeIn"];
+	web_dev_page.classList.add(...classesToAdd);
+	page_2.classList.remove("display-block");
+	page_2.classList.add("display-none");
+});
+
+// closes the web-dev-page X on web-dev-page
+document.getElementById('close').addEventListener('click', function() {
+	web_dev_page.classList.remove("display-block");
+	page_2.classList.add("display-block");
+});
 
 
