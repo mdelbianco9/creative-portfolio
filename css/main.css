@@ -240,7 +240,7 @@ section.hero-section {
 
 .carousel-inner {
 	position: fixed!important;
-	border: 3px solid pink;
+	/*border: 3px solid pink;*/
 	bottom: 5px;
 	left: 0px;
 	/*min-height: 90%;*/
@@ -248,7 +248,7 @@ section.hero-section {
 }
 
 .carousel-item {
-	border: 2px solid yellow;
+	/*border: 2px solid yellow;*/
 }
 
 .carousel-item iframe {
@@ -256,8 +256,6 @@ section.hero-section {
 	top: 3vw;
 	bottom: 0px;
 	height: 600px;
-	/*border: 2px solid red;*/
-	/*border-radius: 50px;*/
 	border: none;
 	-ms-zoom: 0.65;
     transform: scale(.77);
@@ -267,7 +265,7 @@ section.hero-section {
 
 /*the ordered list*/
 .carousel-indicators {
-  position: absolute;
+  position: relative;
   top: 30px;
   z-index: 15;
   display: -ms-flexbox;
@@ -288,7 +286,7 @@ section.hero-section {
   height: 60px;
   margin-right: 3px;
   margin-left: 3px;
-  /*text-indent: -999px;*/
+  text-indent: -999px;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -313,9 +311,33 @@ section.hero-section {
   content: "";
 }
 
+#img-1 {
+	background-image: url("../img/nancy-logo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
+#img-2 {
+	background-image: url("../img/sf-dogs.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
+#img-3 {
+	background-image: url("../img/sep.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
+#img-4 {
+	background-image: url("../img/newtree.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 
 
