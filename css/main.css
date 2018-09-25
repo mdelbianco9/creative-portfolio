@@ -268,7 +268,7 @@ section.hero-section {
 	-ms-zoom: 0.65;
     transform: scale(.77);
     transform-origin: 20 0;
-
+    /*border: 3px solid yellow;*/
 }
 
 /*the ordered list*/
@@ -296,8 +296,11 @@ section.hero-section {
   margin-left: 5px;
   text-indent: -999px;
   cursor: pointer;
-  border: 2px solid white;
-  border-radius: 10px;
+  /*border: 2px solid white;*/
+  /*border-radius: 10px;*/
+     -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
 }
 
 .carousel-indicators li::before {
@@ -375,5 +378,70 @@ section.hero-section {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+
+
+/**** Art Page ****/
+
+#artPage {
+	/*display: none;*/
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(250, 223, 249, .75);
+}
+
+/*col-md-10*/
+.test {
+	margin: auto;
+}
+
+#artPage .row {
+	height: 100%;
+}
+
+#artPage .container {
+	height: 100%;
+}
+
+.artSelector {
+	width: 4.3vw;
+	height: 4.3vw;
+	/*padding:30px;*/
+	border-radius: 50%;
+	border: 2px solid #fff;
+	background-size: contain;
+	vertical-align: top;
+}
+
+.artPiece {
+	height: 35vw;
+	width: 16.5vw;
+	background-size: auto;
+	border-radius: 70px;
+}
+
+.artHeader {
+	margin-top: 23%;
+	color: #fff;
+	font-weight: 500;
+	font-size: 4vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
