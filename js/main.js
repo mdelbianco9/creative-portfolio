@@ -6,6 +6,7 @@ var page_2 = document.getElementById('page-2');
 // Home page
 var home_page = document.getElementById('home-page');
 var web_dev_page = document.getElementById('web-dev-page');
+var artPage = document.getElementById('artPage');
 
 
 // Change color of elements on ? button
@@ -22,9 +23,8 @@ document.getElementById("clickme").addEventListener('click', function() {
 
 /*   Slide #page-2 to view */
 document.getElementById('Layer_1').addEventListener("click", function() {
-	let classesToAdd = ["animated", "slideInUp", "display-block"];
+	let classesToAdd = ["animated", "fadeIn", "display-block"];
 	page_2.classList.add(...classesToAdd);
-	// Removes the home-page from screen
 	home_page.classList.add("display-none");
 });
 
@@ -43,5 +43,25 @@ document.getElementById('close').addEventListener('click', function() {
 	web_dev_page.classList.remove("display-block");
 	page_2.classList.add("display-block");
 });
+
+
+// SHow art page
+document.getElementById("goToArt").addEventListener("click", function() {
+	let classesToAdd = ["animated", "slideInUp", "display-block"];
+	artPage.classList.add(...classesToAdd);
+	page_2.classList.remove("display-block");
+})
+
+// closes the web-dev-page X on web-dev-page
+document.getElementById('back').addEventListener('click', function() {
+	artPage.classList.remove("display-block");
+	page_2.classList.add("display-block");
+});
+
+
+
+
+
+
 
 
