@@ -47,7 +47,7 @@ document.getElementById('close').addEventListener('click', function() {
 
 // SHow art page
 document.getElementById("goToArt").addEventListener("click", function() {
-	let classesToAdd = ["animated", "slideInUp", "display-block"];
+	let classesToAdd = ["animated", "fadeIn", "slow", "display-block"];
 	artPage.classList.add(...classesToAdd);
 	page_2.classList.remove("display-block");
 })
@@ -58,6 +58,13 @@ document.getElementById('back').addEventListener('click', function() {
 	page_2.classList.add("display-block");
 });
 
+// SLide button -> transforms img to be larger
+document.getElementById('slideBtn').addEventListener('click', function() {
+	var className = document.getElementsByClassName('artPiece')[0];
+	className.classList.add('transitionArt');
+	var artHeader = document.getElementsByClassName('artHeader')[0];
+	artHeader.classList.add('display-none');
+})
 
 
 
