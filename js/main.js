@@ -59,13 +59,22 @@ document.getElementById('back').addEventListener('click', function() {
 });
 
 // SLide button -> transforms img to be larger
-document.getElementById('slideBtn').addEventListener('click', function() {
-	var className = document.getElementsByClassName('artPiece')[0];
-	className.classList.add('transitionArt');
-	var artHeader = document.getElementsByClassName('artHeader')[0];
-	artHeader.classList.add('display-none');
-})
+var counter = 1;
+var className = document.getElementsByClassName('artPiece')[0];
+var artHeader = document.getElementsByClassName('artHeader')[0];
 
+ function toggleFunc() {
+	counter += 1;
+	if(counter % 2 == 0){
+		className.classList.add('transitionArt');
+		artHeader.classList.add('display-none');	
+	}else{
+		className.classList.remove('transitionArt');
+		artHeader.classList.remove('display-none');	
+	}
+	console.log(counter);
+	
+};
 
 
 
