@@ -58,19 +58,67 @@ document.getElementById('back').addEventListener('click', function() {
 	page_2.classList.add("display-block");
 });
 
+
+
 // SLide button -> transforms img to be larger
+
+var imgArray = [
+	{
+		id: "art2",
+		img: "img/art/art2.png"
+	},
+	{
+		id: "art3",
+		img: "img/art/art3.png"
+	},
+	{
+		id: "art4",
+		img: "img/art/art4.png"
+	},
+	{
+		id: "art5",
+		img: "img/art/art5.png"
+	},
+	{
+		id: "art6",
+		img: "img/art/art6.jpg"
+	}
+]
+
 var counter = 1;
 var className = document.getElementsByClassName('artPiece')[0];
 var artHeader = document.getElementsByClassName('artHeader')[0];
+var artList = document.getElementById('artList');
+
+// Create Elements:
+
 
  function toggleFunc() {
 	counter += 1;
 	if(counter % 2 == 0){
 		className.classList.add('transitionArt');
-		artHeader.classList.add('display-none');	
+		artHeader.classList.add('display-none');
+		//Add list items 
+		for(i=0; i<imgArray.length; i++){
+			var createLi = document.createElement('LI');
+			var createImg = document.createElement('IMG');
+
+				createImg.setAttribute('src', imgArray[i].img);
+				createImg.classList.add('artSelector');
+				let classLi = ['animated', 'fadeInDown'];
+				createLi.classList.add(...classLi);
+				createLi.appendChild(createImg);
+				artList.appendChild(createLi);
+		}
+		
+
+
 	}else{
 		className.classList.remove('transitionArt');
-		artHeader.classList.remove('display-none');	
+		artHeader.classList.remove('display-none');
+		// Remove list items
+
+
 	}
 	console.log(counter);
 	
