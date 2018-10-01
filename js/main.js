@@ -105,7 +105,7 @@ var artList = document.getElementById('artList');
 
 				createImg.setAttribute('src', imgArray[i].img);
 				createImg.classList.add('artSelector');
-				let classLi = ['animated', 'fadeInDown'];
+				let classLi = ['animated', 'fadeInDown', 'li1'];
 				createLi.classList.add(...classLi);
 				createLi.appendChild(createImg);
 				artList.appendChild(createLi);
@@ -117,7 +117,13 @@ var artList = document.getElementById('artList');
 		className.classList.remove('transitionArt');
 		artHeader.classList.remove('display-none');
 		// Remove list items
+		var li1 = document.getElementsByClassName('li1');
+		for(i=0; i<li1.length; i++){
+			li1[i].style.display = 'none';
+		}	
 
+
+		
 
 	}
 	console.log(counter);
