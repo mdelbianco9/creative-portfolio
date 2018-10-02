@@ -89,12 +89,14 @@ var counter = 1;
 var className = document.getElementsByClassName('artPiece')[0];
 var artHeader = document.getElementsByClassName('artHeader')[0];
 var artList = document.getElementById('artList');
+var artImage = document.getElementById('artImage');
 
 // Create Elements:
 
 
  function toggleFunc() {
 	counter += 1;
+
 	if(counter % 2 == 0){
 		className.classList.add('transitionArt');
 		artHeader.classList.add('display-none');
@@ -110,20 +112,37 @@ var artList = document.getElementById('artList');
 				createLi.appendChild(createImg);
 				artList.appendChild(createLi);
 		}
+		var liList = document.getElementsByClassName('li1');
+		// add event listener to each li 
+		for(i=0; i<liList.length; i++){
+			liList[i].addEventListener('click', function(){
+
+				
+					artImage.setAttribute('src', imgArray[3].img);
+					console.log(liList[i])
+				
+					
+					
+				
+				
+				
+				
+				
+			})
+		}
 		
-
-
 	}else{
 		className.classList.remove('transitionArt');
 		artHeader.classList.remove('display-none');
 		// Remove list items
 		var li1 = document.getElementsByClassName('li1');
+		// for(i=0; i<li1.length; i++){
+		// 	li[i].classList.remove('fadeInDown')
+		// 	li1[i].classList.add('fadeOutUp');
+		// }
 		for(i=0; i<li1.length; i++){
 			li1[i].style.display = 'none';
 		}	
-
-
-		
 
 	}
 	console.log(counter);
