@@ -114,22 +114,25 @@ var artImage = document.getElementById('artImage');
 		}
 		var liList = document.getElementsByClassName('li1');
 		// add event listener to each li 
-		for(i=0; i<liList.length; i++){
-			liList[i].addEventListener('click', function(){
-
-				
-					artImage.setAttribute('src', imgArray[3].img);
-					console.log(liList[i])
-				
-					
-					
-				
-				
-				
-				
-				
+		liList[0].addEventListener('click', function(){
+				artImage.setAttribute('src', imgArray[0].img);
 			})
-		}
+
+		liList[1].addEventListener('click', function(){
+				artImage.setAttribute('src', imgArray[1].img);
+			})
+
+		liList[2].addEventListener('click', function(){
+				artImage.setAttribute('src', imgArray[2].img);
+			})
+
+		liList[3].addEventListener('click', function(){
+				artImage.setAttribute('src', imgArray[3].img);
+			})
+
+		liList[4].addEventListener('click', function(){
+				artImage.setAttribute('src', imgArray[4].img);
+			})
 		
 	}else{
 		className.classList.remove('transitionArt');
