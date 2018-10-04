@@ -96,6 +96,57 @@ var artImage = document.getElementById('artImage');
 
  function toggleFunc() {
 	counter += 1;
+var liList = document.getElementsByClassName('li1');
+	if(counter % 2 == 0){
+		className.classList.add('transitionArt');
+		artHeader.classList.add('display-none');
+
+
+		//Add list items 
+		
+		
+
+		for(i=0; i<liList.length; i++){
+			liList[i].classList.add('display-block')
+		}
+		// add event listener to each li 
+		liList[0].addEventListener('click', function(){
+				artImage.setAttribute('src', imgArray[0].img);
+			})
+
+		liList[1].addEventListener('click', function(){
+				artImage.setAttribute('src', imgArray[1].img);
+			})
+
+		liList[2].addEventListener('click', function(){
+				artImage.setAttribute('src', imgArray[2].img);
+			})
+
+		liList[3].addEventListener('click', function(){
+				artImage.setAttribute('src', imgArray[3].img);
+			})
+
+		liList[4].addEventListener('click', function(){
+				artImage.setAttribute('src', imgArray[4].img);
+			})
+		
+	}else{
+		className.classList.remove('transitionArt');
+		artHeader.classList.remove('display-none');
+	
+		for(i=0; i<liList.length; i++){
+			liList[i].classList.remove('display-block')
+		}	
+
+	}
+	console.log(counter);
+	
+};
+
+
+/*
+function toggleFunc() {
+	counter += 1;
 
 	if(counter % 2 == 0){
 		className.classList.add('transitionArt');
@@ -150,7 +201,7 @@ var artImage = document.getElementById('artImage');
 	}
 	console.log(counter);
 	
-};
+};*/
 
 
 
